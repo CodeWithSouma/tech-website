@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap5 website</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+<!-- for gallery -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+<script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+<!-- fontawesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand text-lowercase" href="#">CodeWithSouma</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active text-lowercase"
+                aria-current="page"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-lowercase" href="#about">About Us</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-lowercase" href="#services">Services</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link text-lowercase" href="#gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-lowercase" href="#contact">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- carousel section -->
+    <header>
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/c1.jpg" class="d-block w-100" alt="not found" />
+            <div class="carousel-caption d-md-block">
+              <h5>First slide label</h5>
+              <p>
+                Some representative placeholder content for the first slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/c2.jpg" class="d-block w-100" alt="not found" />
+            <div class="carousel-caption d-md-block">
+              <h5>Second slide label</h5>
+              <p>
+                Some representative placeholder content for the second slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/c3.jpg" class="d-block w-100" alt="not found" />
+            <div class="carousel-caption d-md-block">
+              <h5>Third slide label</h5>
+              <p>
+                Some representative placeholder content for the third slide.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- about us section -->
+    <section class="main-heading my-5" id="about">
+      <div class="text-center">
+        <h1 class="display-4 about-heading">about us</h1>
+        <hr class="w-25 mx-auto" />
+      </div>
+      <div class="container my-5">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-12 col-xxl-6 my-2">
+            <figure class="m-auto">
+              <img
+                class="img-fluid rounded about-image"
+                src="images/about.jpg"
+                alt="not found"
+              />
+            </figure>
+          </div>
+          <div
+            class="
+              col-lg-8 col-md-8 col-12 col-xxl-6
+              d-flex
+              justify-content-center
+              align-items-start
+              flex-column
+              my-2
+            "
+          >
+            <h1>My Journey</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Distinctio est, neque ab esse eos at possimus? Quisquam amet
+              sapiente voluptates consectetur. Molestiae vero optio veniam
+              incidunt et natus libero nemo. Aliquam modi maxime unde cumque
+              officiis aspernatur tempore consequuntur non id distinctio quasi
+              ad enim pariatur quidem nostrum saepe suscipit, expedita aliquid
+              odit perferendis qui animi molestias necessitatibus est. Sint?
+            </p>
+            <!-- <button type="button" class="btn btn-outline-dark shadow-none">
+              Check More
+            </button> -->
+            <button class="btn-hover color-4">Check More</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- services -->
+    <section class="main-heading services mt-5 py-5" id="services">
+      <div class="text-center">
+        <h1 class="display-4 about-heading">services</h1>
+        <hr class="w-25 mx-auto" />
+      </div>
+      <div class="container my-5">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-10 col-xxl-4 mx-auto my-2">
+                <div class="card" style="width: 18rem;">
+                    <img
+                      src="images/card1.png"
+                      class="card-img-top"
+                      alt="Sunset Over the Sea"
+                    />
+                    <div class="card-body">
+                      <p class="card-text">
+                        Some quick example text to build on the card title and make up the bulk of the
+                        card's content.
+                      </p>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-10 col-xxl-4 mx-auto my-2">
+                <div class="card" style="width: 18rem;">
+                    <img
+                      src="images/card2.jpg"
+                      class="card-img-top"
+                      alt="Sunset Over the Sea"
+                    />
+                    <div class="card-body">
+                      <p class="card-text">
+                        Some quick example text to build on the card title and make up the bulk of the
+                        card's content.
+                      </p>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-10 col-xxl-4 mx-auto my-2">
+                <div class="card" style="width: 18rem;">
+                    <img
+                      src="images/card3.png"
+                      class="card-img-top"
+                      alt="Sunset Over the Sea"
+                    />
+                    <div class="card-body">
+                      <p class="card-text">
+                        Some quick example text to build on the card title and make up the bulk of the
+                        card's content.
+                      </p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-10 col-xxl-4 mx-auto my-2">
+                <div class="card" style="width: 18rem;">
+                    <img
+                      src="images/card4.png"
+                      class="card-img-top"
+                      alt="Sunset Over the Sea"
+                    />
+                    <div class="card-body">
+                      <p class="card-text">
+                        Some quick example text to build on the card title and make up the bulk of the
+                        card's content.
+                      </p>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-10 col-xxl-4 mx-auto my-2">
+                <div class="card" style="width: 18rem;">
+                    <img
+                      src="images/card5.jpeg"
+                      class="card-img-top"
+                      alt="Sunset Over the Sea"
+                    />
+                    <div class="card-body">
+                      <p class="card-text">
+                        Some quick example text to build on the card title and make up the bulk of the
+                        card's content.
+                      </p>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-10 col-xxl-4 mx-auto my-2">
+                <div class="card" style="width: 18rem;">
+                    <img
+                      src="images/card6.png"
+                      class="card-img-top"
+                      alt="Sunset Over the Sea"
+                    />
+                    <div class="card-body">
+                      <p class="card-text">
+                        Some quick example text to build on the card title and make up the bulk of the
+                        card's content.
+                      </p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+
+        <div class="col-xxl-12 text-center mt-5" >
+            <button class="btn-hover color-8">Check More</button>
+
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- gallery -->
+    <section class="main-heading gallery  py-5" id="gallery">
+        <div class="text-center">
+          <h1 class="display-4 about-heading">Gallery</h1>
+          <hr class="w-25 mx-auto" />
+        </div>
+
+        <div class="container page-top">
+            <div class="row">    
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a href="https://images.pexels.com/photos/62307/air-bubbles-diving-underwater-blow-62307.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" class="fancybox" rel="ligthbox">
+                        <img  src="https://images.pexels.com/photos/62307/air-bubbles-diving-underwater-blow-62307.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" class="zoom img-fluid "  alt="">
+                       
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a href="https://images.pexels.com/photos/38238/maldives-ile-beach-sun-38238.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"  class="fancybox" rel="ligthbox">
+                        <img  src="https://images.pexels.com/photos/38238/maldives-ile-beach-sun-38238.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" class="zoom img-fluid"  alt="">
+                    </a>
+                </div>
+                
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a href="https://images.pexels.com/photos/158827/field-corn-air-frisch-158827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="fancybox" rel="ligthbox">
+                        <img  src="https://images.pexels.com/photos/158827/field-corn-air-frisch-158827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="zoom img-fluid "  alt="">
+                    </a>
+                </div>
+                
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a href="https://images.pexels.com/photos/302804/pexels-photo-302804.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="fancybox" rel="ligthbox">
+                        <img  src="https://images.pexels.com/photos/302804/pexels-photo-302804.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="zoom img-fluid "  alt="">
+                    </a>
+                </div>
+                
+                 <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a href="https://images.pexels.com/photos/1038914/pexels-photo-1038914.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" class="fancybox" rel="ligthbox">
+                        <img  src="https://images.pexels.com/photos/1038914/pexels-photo-1038914.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" class="zoom img-fluid "  alt="">
+                    </a>
+                </div>
+                
+                 <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a href="https://images.pexels.com/photos/414645/pexels-photo-414645.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" class="fancybox" rel="ligthbox">
+                        <img  src="https://images.pexels.com/photos/414645/pexels-photo-414645.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" class="zoom img-fluid "  alt="">
+                    </a>
+                </div>
+                
+                 <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a href="https://images.pexels.com/photos/56005/fiji-beach-sand-palm-trees-56005.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="fancybox" rel="ligthbox">
+                        <img  src="https://images.pexels.com/photos/56005/fiji-beach-sand-palm-trees-56005.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="zoom img-fluid "  alt="">
+                    </a>
+                </div>
+                
+                 <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a href="https://images.pexels.com/photos/1038002/pexels-photo-1038002.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="fancybox" rel="ligthbox">
+                        <img  src="https://images.pexels.com/photos/1038002/pexels-photo-1038002.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="zoom img-fluid "  alt="">
+                    </a>
+                </div>
+           </div>
+
+    </section>
+
+    <!-- info section -->
+    <section class="main-heading  pt-5 info-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 py-3 text-center">
+                    <h1>Check out our videos</h1>
+                    <p>Never give up on something that you can't go a day without thinking about.</p>
+                    <button class="btn-hover color-11">Play Now</button>
+                </div>
+            </div>          
+        </div>
+    </section>
+
+    <!-- contact us -->
+    <section class="main-heading  pt-5 " id="contact">
+        <div class="container-fluid">
+            <div class="contact3 py-5">
+                <div class="row no-gutters mx-auto">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <div class="card-shadow">
+                          <img src="images/contact.jpg" class="img-fluid rounded">
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="contact-box ml-3">
+                          <h1 class="font-weight-light mt-2">Quick Contact</h1>
+                          <form class="mt-4">
+                            <div class="row">
+                              <div class="col-lg-12">
+                                <div class="form-group mt-2">
+                                  <input class="form-control" type="text" placeholder="name">
+                                </div>
+                              </div>
+                              <div class="col-lg-12">
+                                <div class="form-group mt-2">
+                                  <input class="form-control" type="email" placeholder="email address">
+                                </div>
+                              </div>
+                              <div class="col-lg-12">
+                                <div class="form-group mt-2">
+                                  <input class="form-control" type="text" placeholder="phone">
+                                </div>
+                              </div>
+                              <div class="col-lg-12">
+                                <div class="form-group mt-2">
+                                  <textarea class="form-control" rows="3" placeholder="message"></textarea>
+                                </div>
+                              </div>
+                              <div class="col-lg-12">
+                                <button type="submit" class="btn btn-danger-gradiant mt-3 text-white border-0 px-3 py-2"><span> SUBMIT</span></button>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                      <div class="col-lg-12">
+                        <div class="card mt-4 border-0 mb-4">
+                          <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                              <div class="card-body d-flex align-items-center c-detail pl-0">
+                                <div class="mr-3 align-self-center">
+                                  <img src="images/icon1.png">
+                                </div>
+                                <div class="ms-3">
+                                  <h6 class="font-weight-medium">Address</h6>
+                                  <p class="">601 Sherwood Ave.
+                                    <br> San Bernandino</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                              <div class="card-body d-flex align-items-center c-detail">
+                                <div class="mr-3 align-self-center">
+                                  <img src="images/icon2.png">
+                                </div>
+                                <div class="ms-3">
+                                  <h6 class="font-weight-medium">Phone</h6>
+                                  <p class="">251 546 9442
+                                    <br> 630 446 8851</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                              <div class="card-body d-flex align-items-center c-detail">
+                                <div class="mr-3 align-self-center">
+                                  <img src="images/icon3.png">
+                                </div>
+                                <div class="ms-3">
+                                  <h6 class="font-weight-medium">Email</h6>
+                                  <p class="">
+                                    info@wrappixel.com
+                                    <br> 123@wrappixel.com
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+        <footer class="bg-dark text-center text-white">
+        <div class="container p-4 pb-0">
+         
+          <section class="mb-4">
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-facebook"></i
+          ></a>
+    
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-twitter"></i
+            ></a>
+      
+            
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-google"></i
+            ></a>
+      
+           
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-instagram"></i
+            ></a>
+      
+          
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+      
+        
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-github"></i
+            ></a>
+          </section>
+
+        </div>
+       
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2022 Copyright:
+          <a class="text-white" href="https://mdbootstrap.com/" style="text-decoration: none; text-transform: lowercase;">CodeWithSouma.com</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+   
+    <!-- bootstrap script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+        $(document).ready(function(){
+  $(".fancybox").fancybox({
+        openEffect: "none",
+        closeEffect: "none"
+    });
+    
+    $(".zoom").hover(function(){
+		
+		$(this).addClass('transition');
+	}, function(){
+        
+		$(this).removeClass('transition');
+	});
+});
+    
+    </script>
+  </body>
+</html>
